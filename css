@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    padding: 40px;
+}
+
+
+/* =========================
+   MAIN BENTO POSTER
+========================= */
+
+.poster {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.25fr 1fr 1fr;
+    grid-template-rows: 200px 155px 155px;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   COMMON CARD STYLE
+========================= */
+
+.card {
+    border-radius: 10px;
+    padding: 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card p {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   CARD 1
+========================= */
+
+.card-one {
+    grid-column: 1;
+    grid-row: 1;
+
+    background: #fcefe5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-one h2 {
+    font-size: 30px;
+    line-height: 0.95;
+    letter-spacing: -1.5px;
+}
+
+.card-one .highlight {
+    color: #e86f35;
+    font-style: italic;
+}
+
+.order-button {
+    margin-top: 20px;
+
+    background: #ffbf69;
+    color: #39251b;
+
+    padding: 12px 20px;
+    width: fit-content;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+
+/* Coffee cup decoration */
+
+.cup {
+    position: absolute;
+    right: 15px;
+    bottom: 12px;
+
+    font-size: 45px;
+    transform: rotate(-8deg);
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero {
+    grid-column: 2 / 4;
+    grid-row: 1;
+
+    background: #633fd3;
+    color: white;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 43px;
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #ffbd55;
+}
+
+.hero .italic {
+    font-style: italic;
+}
+
+.stars {
+    color: #ffd166;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+}
+
+.reviews {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   CARD 3
+========================= */
+
+.card-three {
+    grid-column: 4;
+    grid-row: 1 / 3;
+
+    background: #ddd2fa;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-three h2 {
+    font-size: 28px;
+    line-height: .95;
+}
+
+.menu-board {
+    background: white;
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-top: 15px;
+}
+
+.menu-board h3 {
+    font-size: 13px;
+    color: #633fd3;
+    margin-bottom: 12px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7px 0;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 12px;
+}
+
+.menu-row:last-child {
+    border-bottom: none;
+}
+
+.card-three p {
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+
+/* =========================
+   CARD 4
+========================= */
+
+.card-four {
+    grid-column: 1;
+    grid-row: 2 / 4;
+
+    background: #ffc766;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-four h2 {
+    font-size: 30px;
+    line-height: .95;
+}
+
+.food-box {
+    background: #fffaf2;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+.food-emoji {
+    font-size: 60px;
+    display: block;
+    margin: 15px;
+}
+
+.food-box strong {
+    color: #633fd3;
+}
+
+
+/* =========================
+   CARD 5
+========================= */
+
+.card-five {
+    grid-column: 2;
+    grid-row: 2;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.food-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.food-icons span {
+    background: #f8f2ea;
+    border-radius: 50%;
+
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.card-five h2 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.card-five p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* =========================
+   CARD 6
+========================= */
+
+.card-six {
+    grid-column: 3;
+    grid-row: 2;
+
+    background: #ffbd55;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-six h2 {
+    font-size: 25px;
+    line-height: .95;
+}
+
+.opening-hours {
+    margin-top: 18px;
+
+    background: #633fd3;
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    font-size: 11px;
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   CARD 7
+========================= */
+
+.card-seven {
+    grid-column: 2;
+    grid-row: 3;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.big-number {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.card-seven h3 {
+    font-size: 14px;
+}
+
+.card-seven p {
+    color: #777;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.customer-icons {
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+
+/* =========================
+   CARD 8
+========================= */
+
+.card-eight {
+    grid-column: 3 / 5;
+    grid-row: 3;
+
+    background: #633fd3;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-eight h2 {
+    font-size: 35px;
+    line-height: .95;
+    max-width: 300px;
+}
+
+.card-eight h2 span {
+    color: #ffbd55;
+}
+
+.discount-box {
+    background: white;
+    color: #222;
+
+    width: 130px;
+    height: 110px;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.discount-box strong {
+    color: #633fd3;
+    font-size: 32px;
+}
+
+.discount-box small {
+    font-size: 10px;
+}
+
+
+/* =========================
+   DECORATIVE SHAPES
+========================= */
+
+.decor-circle {
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .18);
+
+    right: -20px;
+    top: -20px;
+}
+
+.decor-star {
+    position: absolute;
+
+    right: 20px;
+    bottom: 15px;
+
+    font-size: 35px;
+
+    color: #ffbd55;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 850px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .poster {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card-one,
+    .hero,
+    .card-three,
+    .card-four,
+    .card-five,
+    .card-six,
+    .card-seven,
+    .card-eight {
+
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .hero {
+        min-height: 230px;
+    }
+
+    .card-three,
+    .card-four {
+        min-height: 300px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .poster {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .card-eight {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card-eight h2 {
+        font-size: 30px;
+    }
+}
